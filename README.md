@@ -145,7 +145,7 @@ rofi-nested-menu-c/
 ## Credits
 
 Based on the original work by
-[Christian Schweigel](https://github.com/cschweig2) — rewritten in C
+[Christian Schweigel](https://github.com/swip3798/rofi-nested-menus) — rewritten in C
 with an extended feature set. Original license preserved in [LICENSE](LICENSE).
 
 ## License
