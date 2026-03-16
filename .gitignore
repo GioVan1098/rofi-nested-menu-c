@@ -1,0 +1,18 @@
+# Build outputs
+src/*.o
+rofi-menu
+
+# Personal configuration (copy config.example.json → config.json and customise)
+config.json
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+.cache/
+.clangd/
+compile_commands.json
+
+# OS
+.DS_Store

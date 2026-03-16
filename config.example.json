@@ -1,0 +1,82 @@
+{
+  "💻 Development": {
+    "::prompt": "Dev Tool",
+    "::icons": true,
+
+    "Editor (Neovim)": {
+      "::cmd": "TERMINAL -e nvim",
+      "::cwd": "~/projects"
+    },
+
+    "Editor (VSCode)": "code",
+
+    "API Client": "postman",
+
+    "Git TUI": {
+      "::cmd": "TERMINAL -e lazygit",
+      "::cwd": "~/projects"
+    },
+
+    "🔨 Build": {
+      "::prompt": "Build",
+
+      "CMake Configure": {
+        "::cmd": "TERMINAL -e bash -c 'cmake -B build -DCMAKE_BUILD_TYPE=Debug && echo Done && read -p \"Press enter\"'"
+      },
+
+      "CMake Build": {
+        "::cmd": "TERMINAL -e bash -c 'cmake --build build -j$(nproc) && echo Done && read -p \"Press enter\"'"
+      },
+
+      "Make": {
+        "::cmd": "TERMINAL -e bash -c 'make -j$(nproc) && echo Done && read -p \"Press enter\"'"
+      },
+
+      "Clean": {
+        "::cmd": "TERMINAL -e bash -c 'rm -rf build && echo Cleaned && read -p \"Press enter\"'",
+        "::confirm": true
+      }
+    }
+  },
+
+  "🗄️ Database": {
+    "::prompt": "Database",
+
+    "DBeaver": "dbeaver",
+
+    "PostgreSQL CLI": {
+      "::cmd": "TERMINAL -e psql -h localhost -U postgres"
+    },
+
+    "MySQL / MariaDB CLI": {
+      "::cmd": "TERMINAL -e mysql -u root -p"
+    },
+
+    "SQLite": {
+      "::cmd": "TERMINAL -e sqlite3"
+    }
+  },
+
+  "🌐 Web": {
+    "::prompt": "Browser",
+    "Firefox":  "firefox",
+    "Chromium": "chromium"
+  },
+
+  "⚙️ System": {
+    "::prompt": "System",
+    "::icons": false,
+
+    "Terminal":     "TERMINAL",
+    "File Manager": "thunar",
+    "Task Manager": "TERMINAL -e htop",
+    "Screenshot":   "flameshot gui",
+
+    "🔐 Sudo Shell": {
+      "::cmd":     "TERMINAL -e sudo -i",
+      "::confirm": true
+    },
+
+    "🔒 Lock Screen": "i3lock"
+  }
+}
